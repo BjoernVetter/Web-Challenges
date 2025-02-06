@@ -25,6 +25,55 @@ button {
   padding: 8px 25px;
 }
 
+.button1 {
+  border-radius: 25px;
+}
+
+.button2 {
+  background-color: grey;
+  color: white;
+  border-radius: 25px;
+}
+
+
+.button3 {
+  background-color: greenyellow;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom-color: violet;
+  border-top-color: cadetblue;
+  border-left-color: grey;
+  border-left-color: beige;
+  border-width: 10px;
+
+
+}
+
+
+
+
+.button4 {
+  border-width: 10px;
+  border-radius: 25px;
+  box-shadow: 10px 5px 5px blue;
+
+}
+.button4:hover {
+
+  border-width: 10px;
+  border-radius: 25px;
+  box-shadow: 10px 5px 5px rgb(68, 255, 0);
+  color: rgb(180, 238, 130);
+  background-color: black;
+
+
+
+
+}
+
 /* Your exercise starts here. */
 
 /* Add your CSS styles below this line. Feel free to replace the comments with your code. 
