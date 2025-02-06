@@ -1,7 +1,7 @@
 {
-  "name": "css-basics_pink-box",
+  "name": "css-basics_pseudo-park",
   "version": "0.0.0-unreleased",
-  "description": "CSS Basics: Pink Box",
+  "description": "CSS Basics: Pseudo Park",
   "main": "index.html",
   "nf": {
     "template": "html-css"
