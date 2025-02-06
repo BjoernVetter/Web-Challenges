@@ -1,18 +1,25 @@
-# CSS Basics: Pink Box
+# CSS Basics: Pseudo Park
 
-Let's get started with CSS! In this challenge, you will create a pink box.
+This challenge will teach you how to
+
+- link a stylesheet,
+- style elements and
+- use pseudo-classes to style elements when they are in a certain state.
 
 ## Tasks
 
 Check out the `./index.html` and the `./css/styles.css` files.
 
-- Fix the selector in the CSS file so that the predefined styles are applied to the `div` element. (Notice the font changing!)
-- Insert styles for background color, text color, and rounded edges as described in the comments within the CSS file.
-- If you don't know the correct CSS properties try searching for them online.
+You can find detailed descriptions of the tasks in the comments of the CSS file.
+
+- Find and fix the reason why the predefined styles are not applied to the HTML document.
+- Make the animals bigger.
+- Align the animals.
+- Surround the animals with their favorite color when the mouse hovers over them.
 
 ## Notes
 
-- You only have to touch the `./css/styles.css` file.
+- You only have to touch the `./css/styles.css` and the `./index.html` files.
 
 ## Development
 
