@@ -26,6 +26,8 @@ main {
   text-align: center;
 }
 
+
+
 /**
  * Look at the selectors defined below.
  * Position each element so that its placement matches the name of the selector.
@@ -36,29 +38,54 @@ main {
  */
 
 .box--top-left {
+  position: absolute;
+  left: 0px;
   background-color: #aed6f1;
 }
 
 .box--top-center {
   background-color: #85c1e9;
+  position: absolute;
+  left: 210px;
+  right: 210px;
+
+
 }
 
 .box--top-right {
   background-color: #5dade2;
+  position: absolute;
+  right: 0px;
+  
+
+
+
 }
 
 .box--center {
   background-color: #3498db;
+  position: absolute;
+  left: 210px;
+  right: 210px;
+  top: 40%;
 }
 
 .box--bottom-left {
   background-color: #2874a6;
+  position: absolute;
+  bottom: 0;
 }
 
 .box--bottom-center {
   background-color: #21618c;
+  position: absolute;
+  left: 210px;
+  bottom: 0;
 }
 
 .box--bottom-right {
   background-color: #1b4f72;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
