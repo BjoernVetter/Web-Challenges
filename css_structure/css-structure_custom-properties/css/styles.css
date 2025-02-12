@@ -12,22 +12,22 @@ body {
 
 :root {
 
---primary: hsl(14, 100%, 53%) ;
---background: hsl(225, 5%, 15%);
---text: hsl(0, 0%, 100%);
---header: hsl(259, 100%, 85%);
---hover:  hsla(263, 100%, 61%, 0.482);
+  --primary: hsl(14, 100%, 53%);
+  --background: hsl(225, 5%, 15%);
+  --text: hsl(0, 0%, 100%);
+  --header: hsl(259, 100%, 85%);
+  --hover: hsla(263, 100%, 61%, 0.482);
 
 }
 
 header {
   background: var(--header);
-  
+
 }
 
 h1 {
   text-align: center;
-  color:var(--text);
+  color: var(--text);
   line-height: 1.4;
   margin: 0;
   letter-spacing: 0.025em;
@@ -106,5 +106,5 @@ mark {
 
 ::selection {
   background-color: var(--background);
-  color:var(--primary);
+  color: var(--primary);
 }
