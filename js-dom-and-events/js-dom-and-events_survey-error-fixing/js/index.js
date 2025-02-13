@@ -3,14 +3,15 @@ console.clear();
 // ------------------ 1 & 2 -----------------
 
 // 1. This code selects the "next" button using an ID. This is bad practice. Can you find a better solution?
-const nextButton = document.querySelector ('[data-js="next-button"]');
-console.log("nextbutton:", nextButton); "nextbutton"; 
+const nextButton = document.querySelector('[data-js="next-button"]');
+console.log("nextbutton:", nextButton);
+("nextbutton");
 nextButton.addEventListener("click", () => {
   console.log("Go to next question");
 });
 
 // 2. When clicking the "previous" button, this event listener is not executed. Do you know what's wrong with this code?
-const prevButton = document.querySelector ('[data-js="prev-button"]');
+const prevButton = document.querySelector('[data-js="prev-button"]');
 prevButton.addEventListener("click", () => {
   console.log("Go to previous question");
 });
