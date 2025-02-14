@@ -8,16 +8,17 @@ console.clear();
   - The number of copies sold
 */
 
-// --v-- write your code here --v--
-
 // --^-- write your code here --^--
-
+const title = "the Lord of the javascript";
+const author = "Mario";
+let rating = 4.2;
+let copiesSold = 120;
 /*
 2: Log all variables to the console, for example:
 
 Title: The Lord of the Javascript
 Author: Mario
-Rating: 4.2
+Rating: 4.2 
 Sales: 120
 
 Then:
@@ -26,8 +27,17 @@ Then:
 - Log all variables to the console again after making these updates.
 */
 
-// --v-- write your code here --v--
+logBookData();
 
+numberOfSales = numberOfSales + 1000;
+rating = 7;
+
+console.log(`title: ${title}`);
+console.log("author: " + author);
+console.log("rating:" + rating);
+console.log("number of Sales:" + numberOfSales);
+
+logBookData();
 // --^-- write your code here --^--
 
 /*
@@ -38,7 +48,17 @@ Then:
  - Replace the existing `console.log` statements with calls to this function.
  - Then, increase the number of sales two more times and log the updated details after each increase.
 */
-
+function logBookData() {
+  console.log(title);
+  console.log(author);
+  console.log(rating);
+  console.log(number);
+}
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
+function logBookData() {
+  console.log(title + "," + author + ", " + rating + ", "  + numberOfSales);
+}
+numberOfSales = numberOfSales +500;
+logBookData();
