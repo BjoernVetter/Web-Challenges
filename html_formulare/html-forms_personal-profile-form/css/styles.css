@@ -36,7 +36,11 @@ fieldset {
 }
 
 input[type="color"] {
+  color: rgb(229, 67, 15);
   margin: auto;
+
+
+
 }
 
 legend {
