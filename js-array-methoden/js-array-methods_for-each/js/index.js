@@ -19,4 +19,51 @@ const colors = [
   "#A5A5A5",
 ];
 
-colors.forEach();
+colors.forEach((color) => {
+
+const div = document.createElement("div");
+div.classList.add("color-box");
+div.style.backgroundColor = color;
+div.style.width ="80px";
+div.style.height ="80px";
+div.style.display ="inline-block";
+div.style.margin ="5px";
+
+
+
+
+
+document.body.append(div);
+
+
+
+});  
+
+
+
+
+function renderColorBox(color) {
+
+
+
+
+
+  const div = document.createElement("div");
+  div.classList.add("color-box");
+  div.style.backgroundColor = color;
+  div.style.width ="80px";
+  div.style.height ="80px";
+  div.style.display ="inline-block";
+  div.style.margin ="5px";
+  
+  
+  
+  document.body.append(div);
+
+
+}
+
+
+color.forEach(renderColorBox);
+
+
