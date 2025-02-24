@@ -7,7 +7,9 @@ const errorElement = document.querySelector("[data-js='error']");
 async function fetchUserData(url) {
   try {
     const response = await fetch(url);
-
+if(!response.ok) {
+  throw new Error(`Fetch Error, ${response.status}`);
+}
     return await response.json();
   } catch (error) {
     return { error: error.message };
