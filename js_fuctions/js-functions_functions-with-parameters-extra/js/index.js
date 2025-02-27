@@ -6,11 +6,17 @@ console.clear();
    The formula is: square = number * number
 */
 
-function printSquare(number) {}
+function printSquare(num) {
+  return num * num;
+}
 
-printSquare(3);
-printSquare(5);
+console.log(printSquare(4));
+console.log(printSquare(9));
 
+function printCircumference(number) {
+  console.log(number * number);
+}
+console.log(printSquare(3));
 /*
 2: Write a function that accepts the radius of a circle as a parameter and logs
    the circumference to the console. The function does not exist yet.
@@ -19,8 +25,36 @@ printSquare(5);
 
 // Uncomment the following function calls and implement the function `printCircumference`.
 
-// printCircumference(4);
-// printCircumference(6);
+function printCircumference(radius) {
+  return 2 * Math.PI * radius;
+}
+
+console.log(printCircumference(4));
+console.log(printCircumference(6));
+
+// Das ist die kurze Version mit Runden
+function printCircumference(radius) {
+  let circumference = 2 * Math.PI * radius;
+  console.log("The circumference is: " + Math.round(circumference));
+}
+printCircumference(4);
+printCircumference(6);
+
+// da sist die richtige Lösung
+
+function printCircumference(radius) {
+  console.log(2 * Math.PI * radius);
+}
+
+printCircumference(8);
+
+
+// so kann ich in der funktion auhc runden.
+function printCircumference(radius) {
+  console.log(Math.round(2 * Math.PI * radius));
+}
+
+printCircumference(5);
 
 /*
 3: Write a function that accepts the width and length of a rectangle
@@ -32,5 +66,9 @@ printSquare(5);
 
 // Uncomment the following function calls and implement the function `printRectangleArea`.
 
-// printRectangleArea(5, 7);
-// printRectangleArea(3, 4);
+function printRectangleArea(width, length) {
+  console.log("The area of the rectangle is " + width * length + ".");
+}
+
+printRectangleArea(3, 4);
+// printRectangleArea(3, 8);
