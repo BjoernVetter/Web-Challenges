@@ -6,8 +6,8 @@ export default function App() {
     <main>
       <Button>Save</Button> 
       <Button>Delete</Button> 
-      <Button> Cancel</Button> 
-      <Button> Send</Button> 
+      <Button>Cancel</Button> 
+      <Button>Send</Button> 
     </main>
   );
 }
