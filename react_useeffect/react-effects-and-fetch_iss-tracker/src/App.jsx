@@ -15,7 +15,7 @@ export default function App() {
     try {
       const response = await fetch(URL);
       const data = await response.json();
-      // if (data.message === "success") {
+  
       setCoords({
         latitude: data.latitude,
         longitude: data.longitude,
