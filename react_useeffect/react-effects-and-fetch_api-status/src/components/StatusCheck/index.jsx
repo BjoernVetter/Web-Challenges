@@ -1,16 +1,29 @@
 import "./StatusCheck.css";
-
+import { useState } from "react";
 const apiStatusUrl = "https://example-apis.vercel.app/api/status";
 
 export default function StatusCheck() {
-  const statusIcon = "⁉️";
+  const [statusIcon, setStatusIcon] = useState ("⁉️");
   // Something needs to change here…
   // ↙️
-  function handleCheckApiStatus() {
+  async function handleCheckApiStatus() {
+
+
+    try {
+setStatusIcon("⏳");
+const response = await fetch(apiStatusUrl);
+const icon = response.ok ? "✅" : "❌";
+setStatusIcon(icon);
+
+
+    }catch {
+      setStatusIcon("🚨");
+    }
+
     /**
      * Hint 1:
      * Use the `fetch()` function to send a request to `apiStatusUrl`.
-     *
+     
      * Hint 2:
      * The `fetch()` function returns a promise that resolves to a Response
      * object.
