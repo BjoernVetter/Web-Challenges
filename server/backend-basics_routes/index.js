@@ -1,3 +1,5 @@
-// import { server } from "./server.js";
+import { server } from "./server.js";
 
-// server.listen(…
+server.listen(8000, () => {
+  console.log("der server läuft auf http://localhost");
+});
