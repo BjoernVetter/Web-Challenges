@@ -20,7 +20,10 @@ export default function ProductDetail() {
     <div>
       <h1>{product.name}</h1>
       <p>{product.description}</p>
-      <p>Preis: {product.price}{product.currency}</p>
+      <p>
+        Preis: {product.price}
+        {product.currency}
+      </p>
       <p>Kategorie: {product.category}</p>
     </div>
   );
