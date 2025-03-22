@@ -16,6 +16,8 @@ export default function ProductDetail() {
   if (isLoading) return <p>Lade Produktdetails...</p>;
   if (error || !product) return <p>Produkt nicht gefunden</p>;
 
+
+
   return (
     <div>
       <h1>{product.name}</h1>
@@ -28,3 +30,4 @@ export default function ProductDetail() {
     </div>
   );
 }
+//////
