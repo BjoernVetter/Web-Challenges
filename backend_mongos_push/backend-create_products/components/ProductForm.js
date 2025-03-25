@@ -7,9 +7,9 @@ export default function ProductForm() {
   async function handleSubmit(event) {
     event.preventDefault();
     // Lesen der Formulardaten
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.currentTarget);
     const productData = Object.fromEntries(formData);
-    //data Fetch für interne API: "/api/products" mit übergabe der Post-relevanten Objektinhalten
+    //data Fetch für interne API: "/api/products" mit übergabe der POST-relevanten Objektinhalten
     const response = await fetch("/api/products", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -17,6 +17,7 @@ export default function ProductForm() {
     });
 
     // Vorgang der Response schreibens "erfolgreich" lässt mittels "mutate"-mtehode von "swr die Seite refreshn"
+
     if (response.ok) {
       mutate("/api/products");
     }
